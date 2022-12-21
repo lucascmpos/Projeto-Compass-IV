@@ -6,28 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto - Semana 4 - Lucas Campos</title>
     <script src="app.js" defer></script>
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="pag3.css"/>
   </head>
   <body>
-    <section class="pag1">
-      <img id="img1" src="img/Capturar.PNG" />
-      <form>
-        <h1>welcome</h1>
+    <main class="pag3">
+      <img class="img3" src="img/two.png" />
+      <div class="container">
+        <div class="container2">
+      <form class ="form">
+        <h1 class="1">What is the status of your account?</h1>
         <select id = "select">
           <option value="1">
-            opcao 1
+            I have not create an account yet
           </option>
           <option value="2">
-            opcao 1
+            I have a account
           </option>
           <option value="3">
-            opcao 1
+            I dont want a account
           </option>
         </select>
-        <button id="button" type="submit"> enviar </button>
-        <p id="tx">Thanks for participating in the poll</p>
-        <button id="lets" type="enviar">Let's Go</button>
-
+      </form>
+      </div>
+      <form class="form2" action="">
+        <p class="2">In which financial markets do you operate?</p>
+       <input type="radio" id="1" name="market" value="stock">
+        <label for="1">stock market</label><br>
+      <input type="radio" id="2" name="market" value="foreign">
+        <label for="2">foreign exchange</label><br>
+      <input type="radio" id="3" name="market" value="commodity">
+        <label for="3">commodity</label>
+      <input type="radio" id="4" name="market" value="bond">
+        <label for="4">bond market</label>
+      <input type="radio" id="5" name="market" value="crypto">
+        <label for="4">cryptocurrency market</label>
+      </form>
+      <div class ="buttons">
+        <a id="button" type="submit">Next</a>
+        <a href="./pag2.html">Back</a>
+        <a href="./pag4.html">Skip</a>
+      </div>
+      </div>
       </form>
     </section>
   </body>

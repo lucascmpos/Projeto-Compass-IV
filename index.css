@@ -1,0 +1,15 @@
+a {
+    background-color: #3EB25E;
+    color: white;
+    border: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 198px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
