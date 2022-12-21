@@ -1,0 +1,105 @@
+
+#img1{
+    display: flex;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    width: 30%;
+    position: absolute;
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 140px;
+    display: flex;
+    top: 10%;
+    left: 50%;
+    position: absolute;
+}
+
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    display: flex;
+    top: 40%;
+    left: 52%;
+    position: absolute;
+    font-weight: bold;
+}
+
+#lets {
+        color: white;
+        background-color: green;
+        border: none;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 80px;
+        text-transform: uppercase;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        display: flex;
+        top: 60%;
+        left: 60%;
+        position: absolute;
+
+}
+
+@media only screen and (max-width:480px), (max-height: 768px){
+
+    body{
+        justify-content: center;
+        position: relative;
+    }
+
+    #img1{
+        display: flex;
+        height: 200%;
+        width: 70%;
+        justify-content: center;
+        position: relative;
+        left: 6%;
+        top: -20%;
+        padding: 10px;
+    }
+
+
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 50px;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            left: 28%;
+            top: 90%;
+            
+        }
+
+        p{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 19px;
+            display: flex;
+            top: 115%;
+            left: 20%;
+            position: absolute;
+        }
+
+        #lets {
+            color: white;
+            background-color: green;
+            border: none;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 80px;
+            text-transform: uppercase;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            top: 135%;
+            left: 28%;
+            position: absolute;
+
+}
+}
