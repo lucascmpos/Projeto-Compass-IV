@@ -12,12 +12,11 @@ body{
 .pag5{
     display: flex;
     justify-content: center;
-    gap: 10%;
+    gap: -20%;
     align-items: center;
     height: 100%;
     padding: 0;
-    margin: 0 6.5625% 0 6%;
-    background-color: green;
+    margin: 0 2% 0 6%;
 }
 
 
@@ -27,28 +26,26 @@ body{
     align-items: center;
     max-width: 70%;
     min-height: 70%;
-    background-color: red;
 }
 
 .buttons{
+    flex-wrap: wrap;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: purple;
+    justify-content: space-between;
+    margin: 2% 0 0 0;
 }
 
 
-.img3{
+.img5{
     height: 65%;
-    background-color: red;
 }
 
 .title{
     font-weight: bold;
     font-size: 25px;
-    text-align: center;
-    margin: 0;
-    padding-bottom: 3%;
+    text-align: left;
+    margin: 15% 0 0 0;
+    max-width: 43%;
 }
 
 .text{
@@ -56,8 +53,18 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    margin: 5% 0 5% 0;
+    border-radius: 2%;
+
 }
 
+.bigButton {
+    width: 100%;
+    margin-top: 2%;
+}
+a,
+button {
+  width: 46%;
+}
 
 

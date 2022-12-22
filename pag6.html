@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto - Semana 4 - Lucas Campos</title>
-    <script src="app.js" defer></script>
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/pag6.css" />
-  </head>
-  <body>
-    <main class="pag6">
-      <img class="img6" src="img/five.png" />
-      <div class="container">
-        <label class="name" for="name">Full Name:</label>
-            <input type="text" id="name" name="name">
-        <label class="email" for="email">Email:</label>
-            <input type="text" id="email" name="name">
-        <label class="age" for="age">Age:</label>
-            <input type="number" id="age" name="age">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto - Semana 4 - Lucas Campos</title>
+  <script src="pag6.js" defer></script>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/pag6.css" />
+</head>
+
+<body>
+  <main class="pag6">
+    <img class="img6" src="img/five.png" />
+    <div class="container">
+      <div class="textos">
+        <div class="nomes">
+          <label class="name" for="name">Full Name:</label>
+          <input required class="fname" type="text" id="name" name="name" size="80" placeholder="     Nasser Toghiri">
+        </div>
+        <div class ="emails">
+          <label class="email" for="email">Email:</label>
+          <input required class="emai" type="text" id="email" name="name" size="80" placeholder="     N.Toghiri@Gmail.com">
+        </div>
+          <label class="age" for="age">Age:</label>
+          <input required class="ag" type="number" id="age" name="name" size="10" placeholder="     --    --">
+        </div>
         <div class="buttons">
           <a href="./pag5.html">Back</a>
-          <a href="./pag1.html">Submit</a>
+          <button id="button4" type="submit">Submit</button>
         </div>
-      </div>
-    </main>
-  </body>
+      </div>     
+  </main>
+</body>
+
 </html>
