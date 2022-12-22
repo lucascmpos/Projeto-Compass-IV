@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto - Semana 4 - Lucas Campos</title>
-    <script src="app.js" defer></script>
-    <link rel="stylesheet" href="index.css"/>
-    <link rel="stylesheet" href="pag3.css"/>
-  </head>
-  <body>
-    <main class="pag3">
-      <img class="img3" src="img/two.png" />
-      <div class="container">
-        <div class="container2">
-      <form class ="form">
-        <h1 class="1">What is the status of your account?</h1>
-        <select id = "select">
-          <option value="1">
-            I have not create an account yet
-          </option>
-          <option value="2">
-            I have a account
-          </option>
-          <option value="3">
-            I dont want a account
-          </option>
-        </select>
-      </form>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto - Semana 4 - Lucas Campos</title>
+  <script src="./js/pag3.js" defer></script>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/pag3.css" />
+</head>
+
+<body>
+  <main class="pag3">
+    <img class="img3" src="img/two.png" />
+    <form class="form">
+      <h1 class="h1">What is the status of your account?</h1>
+      <select required class="select">
+        <option value="1">I have not create an account yet</option>
+        <option value="2">I have a account</option>
+        <option value="3">I dont want a account</option>
+      </select>
+      <div class="radios">
+        <p class="tx">In which financial markets do you operate?</p>
+
+        <label for="1">
+          <input class="radio" required type="radio" id="1" name="market" value="stock" />
+          stock market</label>
+
+        <label for="2">
+          <input class="radio" required type="radio" id="2" name="market" value="foreign" />
+          foreign exchange</label>
+
+        <label for="3">
+          <input class="radio" required type="radio" id="3" name="market" value="commodity" />
+          commodity</label>
+
+        <label for="4">
+          <input class="radio" required type="radio" id="4" name="market" value="bond" />
+          bond market</label>
+
+        <label for="5">
+          <input class="radio" required type="radio" id="5" name="market" value="crypto" />
+          cryptocurrency market</label>
+
       </div>
-      <form class="form2" action="">
-        <p class="2">In which financial markets do you operate?</p>
-       <input type="radio" id="1" name="market" value="stock">
-        <label for="1">stock market</label><br>
-      <input type="radio" id="2" name="market" value="foreign">
-        <label for="2">foreign exchange</label><br>
-      <input type="radio" id="3" name="market" value="commodity">
-        <label for="3">commodity</label>
-      <input type="radio" id="4" name="market" value="bond">
-        <label for="4">bond market</label>
-      <input type="radio" id="5" name="market" value="crypto">
-        <label for="4">cryptocurrency market</label>
-      </form>
-      <div class ="buttons">
-        <a id="button" type="submit">Next</a>
+
+      <div class="buttons">
         <a href="./pag2.html">Back</a>
-        <a href="./pag4.html">Skip</a>
+        <button id="button" type="submit">Next</button>
+        <a class="bigButton" href="./pag4.html">Skip</a>
       </div>
-      </div>
-      </form>
-    </section>
-  </body>
+    </form>
+  </main>
+</body>
+
 </html>
