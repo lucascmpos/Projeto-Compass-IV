@@ -9,7 +9,7 @@ submitButton.addEventListener("click", e => {
     }
 
     const inputEmail = document.querySelector('input[name="email"]');
-    if (inputEmail.value.length >= 7) {
+    if (inputEmail.value.length >= 1) {
         localStorage.setItem("inputEValue", inputEmail.value);
         test[1] = true
     } 

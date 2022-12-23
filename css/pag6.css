@@ -51,12 +51,31 @@ body {
   justify-content: space-between;
   margin: 0% 0 0 0;
   padding: 0 0 10% 2%;
-  min-width: 80%;
+  min-width: 0%;
   max-height: 8%;
   align-self: flex-start;
 }
 
-
+a {
+  min-width: 100%;
+  margin: 10% 0% -1% -5%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 300% 0% 300%;
+}
+button {
+  min-width: 100%;
+  margin: 10% 0% -1% -5%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 350% 0% 350%;
+}
 
 .nomes {
   display: flex;
@@ -82,8 +101,11 @@ body {
   box-sizing: border-box;
   font-size: 20px;
   width: 100%;
+  
 }
-
+.fname:hover{
+  border: 1px solid #475242;
+}
 .emai {
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 20px;
@@ -93,6 +115,9 @@ body {
   width: 100%;
   font-size: 20px;
 }
+.emai:hover{
+  border: 1px solid #475242;
+}
 
 .ag {
   border: 1px solid rgba(0, 0, 0, 0.25);
@@ -101,6 +126,9 @@ body {
   margin: 4% 20% 0% 0;
   box-sizing: border-box;
   font-size: 20px;
+}
+.ag:hover{
+  border: 1px solid #475242;
 }
 
 #name::placeholder {
@@ -115,13 +143,22 @@ body {
   font-size: 20px;
 }
 .a {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .button {
-  font-size: 20px;
+  font-size: 25px;
 }
 
+.button:hover{
+  background-color:yellow;
+  color: black;
+}
+
+a:hover{
+  background-color:yellow;
+  color: black;
+}
 @media only screen and (max-width: 640px) {
   body {
     padding: 0;
@@ -162,19 +199,27 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+
   }
   .buttons {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     min-width: 200%;
-    padding: 0 60% 0 80%;
+    padding: 0 10% 0 80%;
     margin: 0 0 0 -120%;
   }
 
   .img6 {
     height: 55%;
     margin: 40% 0 -35% 0;
+  }
+  .a {
+    font-size: 15px;
+  }
+  
+  .button {
+    font-size: 15px;
   }
 
   .text {
@@ -204,8 +249,9 @@ body {
   .ag {
     padding: 3% 4% 3% 4%;
     margin: 4% 70% 0% 0;
+    
   }
-}
+
 
 #name::placeholder {
   font-size: 17px;
@@ -222,12 +268,21 @@ body {
 a,
 button {
   min-width: 100%;
-  margin: 4% 10% -1% -5%;
+  margin: 2% 0% -1% -5%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0%;
 }
+.button:hover{
+  background-color:yellow;
+  color: black;
+}
 
+a:hover{
+  background-color:yellow;
+  color: black;
+}
 
+}

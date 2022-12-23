@@ -53,6 +53,15 @@ h1{
 p{
     text-align: center;
 }
+.button:hover{
+    background-color:yellow;
+    color: black;
+  }
+  
+  a:hover{
+    background-color:yellow;
+    color: black;
+  }
 
 .tx {
     max-height: 900px;

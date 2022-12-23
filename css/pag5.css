@@ -55,6 +55,11 @@ body{
     align-items: center;
     margin: 5% 0 5% 0;
     border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.text:hover{
+    border: 1px solid #475242;
 
 }
 
@@ -66,7 +71,15 @@ a,
 button {
   width: 46%;
 }
-
+.button:hover{
+    background-color:yellow;
+    color: black;
+  }
+  
+  a:hover{
+    background-color:yellow;
+    color: black;
+  }
 
 @media only screen and (max-width: 640px) {
    
@@ -140,5 +153,14 @@ button {
     font-size: 1rem;
     min-width: 100px;
     max-height: 22px;
+  }
+  .button:hover{
+    background-color:yellow;
+    color: black;
+  }
+  
+  a:hover{
+    background-color:yellow;
+    color: black;
   }
 }
