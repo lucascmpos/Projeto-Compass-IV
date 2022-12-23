@@ -16,15 +16,7 @@ body {
   align-items: center;
   height: 100%;
   padding: 0;
-  margin: 0 6.5625% 0 6%;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 70%;
-  min-height: 70%;
+  margin: 0 0 0 15%;
 }
 
 .img3 {
@@ -33,29 +25,28 @@ body {
 
 h1 {
   font-style: normal;
-  font-size: 25px;
+  font-size: 35px;
   text-align: center;
   margin: 0;
   padding-bottom: 3%;
 }
 
+.tx{
+  font-weight: bold;
+  font-size: 35px;
+  min-width: 100%;
+}
+
 .form {
+  margin: 15% 10% 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 20% 0 20% 0;
+  max-width: 70%;
+  min-height: 70%;
 }
 
-.form2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
-  margin: 0 0 20% 0;
-}
-
-.select {
+.selectstatus{
   padding: 10px 20px 10px 40px;
   font-size: 1.5rem;
   background-color: transparent;
@@ -74,6 +65,9 @@ h1 {
   display: flex;
   flex-direction: column;
   margin-bottom: 5%;
+  gap: 1vh;
+  font-size: 30px;
+  margin-top: 5%;
 }
 
 input[type="radio"] {
@@ -91,10 +85,12 @@ input[type="radio"]:checked {
   background-color: green;
 }
 
-.buttons {
+.buttons3 {
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  margin-right: 2%;
 }
 
 a,
@@ -107,12 +103,6 @@ button {
   margin-top: 2%;
 }
 
-p {
-  text-align: center;
-  max-height: 900px;
-  max-width: 480px;
-  font-size: 25px;
-}
 
 @media only screen and (max-width: 640px) {
   body {
@@ -131,9 +121,10 @@ p {
     gap: 0;
     align-items: center;
     height: 80%;
+    margin: 0 10% 0 6%;
   }
 
-  .container {
+  .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,13 +132,7 @@ p {
     max-width: 100%;
   }
 
-  .container2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10% 0 0 0;
-  }
+  
 
   .img3 {
     height: 50%;
@@ -162,18 +147,24 @@ p {
   }
 
   p {
-    font-size: 19px;
+    font-size: 10px;
     font-weight: bold;
-    margin: 0 0 0 0;
+    margin: 0 0 0 10%;
     padding: 4%;
   }
 
   .tx {
-    font-size: 18px;
-    min-width: 90%;
+    font-size: 19px;
+    min-width: 100%;
   }
-  .select {
-    padding: 10px 20px 10px 40px;
+
+  .radios{
+    margin: 0 20% 10% 0;
+    font-size: 16px;
+    gap: 1vh
+  }
+  .selectstatus {
+    padding: 2% 10% 2% 13%;
     font-size: 1rem;
     background-color: transparent;
     border: none;
@@ -181,7 +172,7 @@ p {
     background-image: url("./img/selectIcon.svg");
     background-repeat: no-repeat;
     background-position: 15px 50%;
-    background-size: 1.2rem;
+    background-size: 1.1rem;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 20px;
   }
@@ -191,16 +182,31 @@ p {
     height: 20px;
     border: 0 none;
     border-radius: 50%;
-    margin: 2px 1px 0px 10%;
+    margin: 4px 10px -1px 20%;
     background-clip: content-box;
     padding: 0px;
     background: rgba(62, 178, 94, 0.3);
   }
 
+  input[type=""]:checked {
+    background-color: green;
+  }
+
   a,
   button {
     font-size: 1rem;
-    min-width: 105px;
+    min-width: 120px;
     max-height: 25px;
   }
 }
+
+.buttons {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: 25%;
+}
+
+
+
