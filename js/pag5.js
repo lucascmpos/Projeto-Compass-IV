@@ -1,11 +1,10 @@
-const button3 = document.getElementById("button3");
-button3.addEventListener("click", e => {
+const nextButton = document.getElementById("nextButton");
+nextButton.addEventListener("click", e => {
     e.preventDefault();
-    const textChecked = document.querySelector('textarea[name="texto"]:checked');
-    if (textChecked != null && textChecked.length > 0) {
-        localStorage.setItem("textValue", textChecked.value);
+    const text = document.querySelector('textarea[name="texto"]');
+    if (text.value.length >= 5) {
+        console.log(text.value);
+        localStorage.setItem("textValue", text.value);
         window.location.href = "./pag6.html"
     } else(alert("You didn't write any text!"))
 });
-
-

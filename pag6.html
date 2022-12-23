@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projeto - Semana 4 - Lucas Campos</title>
-  <script src="pag6.js" defer></script>
+  <script src="./js/pag6.js" defer></script>
   <link rel="stylesheet" href="./css/index.css" />
   <link rel="stylesheet" href="./css/pag6.css" />
 </head>
@@ -14,24 +14,26 @@
 <body>
   <main class="pag6">
     <img class="img6" src="img/five.png" />
-    <div class="container">
+    <form class="container">
       <div class="textos">
         <div class="nomes">
           <label class="name" for="name">Full Name:</label>
-          <input required class="fname" type="text" id="name" name="name" size="80" placeholder="     Nasser Toghiri">
+          <input required class="fname" type="text" id="name" name="name" placeholder="     Nasser Toghiri">
         </div>
-        <div class ="emails">
+        <div class="emails">
           <label class="email" for="email">Email:</label>
-          <input required class="emai" type="text" id="email" name="name" size="80" placeholder="     N.Toghiri@Gmail.com">
+          <input required class="emai" type="text" id="email" name="email" placeholder="     N.Toghiri@Gmail.com">
         </div>
+        <div class="ages">
           <label class="age" for="age">Age:</label>
-          <input required class="ag" type="number" id="age" name="name" size="10" placeholder="     --    --">
+          <input required class="ag" type="number" id="age" name="age" placeholder="     --    --">
         </div>
-        <div class="buttons">
-          <a href="./pag5.html">Back</a>
-          <button id="button4" type="submit">Submit</button>
-        </div>
-      </div>     
+      </div>
+      <div class="buttons">
+        <a href="./pag5.html">Back</a>
+        <button id="submitButton" type="submit">Submit</button>
+      </div>
+    </form>
   </main>
 </body>
 
